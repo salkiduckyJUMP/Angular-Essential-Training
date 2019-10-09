@@ -1,0 +1,24 @@
+<nav>
+  <!--Set routerLink to our absolute or relative url segment we want to navigate to-->
+  <a routerLink="/">
+    <img src="assets/04.png" class="icon" />
+  </a>
+  <a routerLink="/Movies">
+    <img src="assets/03.png" class="icon" />
+  </a>
+  <a routerLink="/Series">
+    <img src="assets/02.png" class="icon" />
+  </a>
+</nav>
+<section>
+  <header>
+    <h1>Media Watch List</h1>
+    <p class="description">Keeping track of the media I want to watch.</p>
+  </header>
+  <!--Renders our routes given the correct url/path-->
+  <router-outlet></router-outlet>
+  <!--firstMediaItem property from app.component is binding source and mediaItem is bound to it-->
+  <!--delete uses $event to let Angular evaluate and handle getting the emit value and placing it where $event is -->
+  <!--<mw-media-item-form></mw-media-item-form>
+  <mw-media-item-list></mw-media-item-list>-->
+</section>
